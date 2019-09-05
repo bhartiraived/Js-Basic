@@ -1,0 +1,28 @@
+let str="this is my new string."
+
+//slicing,substring,sustr
+console.log(sliceddata=str.slice(2,6));//is i
+console.log(sliceddata=str.slice(-12,-6));//new s
+console.log(sliceddata=str.substring(2,6));
+console.log(sliceddata=str.substring(-12,-6));//substring do not allow negetive
+console.log(sliceddata=str.substr(7,3));//from 7th , take 2 charachters
+
+
+//trim()
+let mystring=" ! mystring ! "
+alert(mystring.trim())
+
+//Extracting String Characters
+let string3="data";
+console.log(string3.charAt(1));
+console.log(string3.charCodeAt(1));
+
+//converting string to arra
+let string4='a,b,c,d,e';
+data=string4.split(",");
+
+//After conversion to array, access each element using index
+console.log(typeof(data));
+console.log((data));
+data[0]=3;
+console.log((data));
