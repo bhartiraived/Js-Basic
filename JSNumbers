@@ -1,0 +1,45 @@
+let str="this is my new string."
+
+//JS Numbers
+var x = 10;
+var y = "20";
+var z = x + y; 
+console.log(z);
+console.log(typeof(z));
+
+//Some facts
+var x = 10;
+var y = 20;
+var z = "Result: " + x + y;
+console.log(z);//this will concat, as we have string first
+
+//If number is found then add, and concat when string is found
+var x = 10;
+var y = 20;
+var z = "40";
+var result = x + y + z;
+console.log(result);
+
+//JS tries to convert to number in all numeric operations
+var x = "100";
+var y = "10";
+var z = x / y;       // z will be 10
+console.log("z="+z);
+console.log(typeof(z));
+
+//Exceptonal case,JSwill concatenatw
+var x = "100";
+var y = "10";
+var z = x + y;       // z will not be 110
+                    // (It will be 10010)
+console.log("Exceptional case of '+' "+z);
+
+//result is Nan
+var x = 100 / "Apple";  // x will be NaN (Not a Number) 
+console.log(x);
+
+//toString() to chnage to another base
+let mynumber=8;
+console.log(mynumber.toString(8));
+
+
