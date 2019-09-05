@@ -1,0 +1,29 @@
+var x = 123;
+a=(123).toString();        // returns 123 from literal 123
+console.log(typeof(a));
+
+c=x.toExponential(6);
+console.log(c);
+
+// toFixed() Method
+var x=9.1234;
+
+console.log(x.toFixed(3)); //gives 9.123
+
+//Precison method
+var x = 9.656;
+console.log(x.toPrecision(2));        // returns 9.7
+//valueOf method
+
+//conevrt js variables to number
+console.log(Number("10"));
+console.log(Number(true));
+console.log(Number(10,23));
+
+//other methods:parses a string and returns a number.
+console.log(parseFloat(20,30));
+console.log(parseFloat("years 10"));  // returns NaN
+
+let x = 6;
+let y x.MAX_VALUE;   
+console.log("y="+y);
