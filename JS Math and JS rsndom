@@ -1,0 +1,25 @@
+
+//JS Math
+document.getElementById(id='demo').innerHTML=Math.PI;
+
+document.getElementById(id='demo').innerHTML=Math.round(4.2);
+
+document.getElementById(id='demo').innerHTML=Math.sqrt(25);
+document.getElementById(id='demo').innerHTML=Math.abs
+
+document.getElementById(id='demo').innerHTML=Math.min(1,2,3);
+
+//JS Random
+
+console.log("shows a random number(btw 0 and 1) : "+Math.random());
+
+console.log("shows a random number(btw 0 and 9) : "+Math.floor(Math.random()*10)); 
+
+
+//The below function would give a random number btw max and min
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+ 
+console.log(getRndInteger(10,20));
