@@ -1,0 +1,51 @@
+let flowers=["roses","orchids","lily","sunflower"];
+console.log(flowers);  //access ful array
+console.log(flowers[1]);
+
+//objects
+
+var person={firstN:"Bharti",middleN:"Rai",lastN:"Ved"};
+console.log("Middlename :"+ person["middleN"]);
+
+let myarr=["lily","sunflower"];
+document.getElementById("demo").innerHTML=(myarr.length);
+
+//Adding more elements:
+
+myarr.push("frangipani");
+document.getElementById("demo").innerHTML=(myarr);
+
+//In JavaScript, arrays use numbered indexes.  
+//In JavaScript, objects use named indexes.
+
+var points = new Array(40, 100, 1, 5, 25, 10); // Bad
+var points = [40, 100, 1, 5, 25, 10];          // Good
+
+//to check what is the type off Array "fruit"
+console.log(Array.isArray(points));//prints true
+
+//intanceof
+console.log("Is Points created with constructor of 'Array'");
+console.log(points instanceof Array);
+
+//pop method
+points.pop();
+console.log(points);
+
+//Shift removes first elemet and returns that elemet
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.shift();    // the value of x is "Banana"
+console.log(x);
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.unshift("Banana");    // unshift returns new length of array
+console.log(x);  //prints 5
+
+//Splice ->Add new elements and remove as well
+var fruits = ["Banana", "Orange","grapes"]
+fruits.splice(0,1,4);//it will add at 0th and delete the element at 1th poss 
+console.log(fruits); 
+
+//Merging ARrays
+let newarr=fruits.concat(points);
+console.log(newarr);
