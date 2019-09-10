@@ -1,0 +1,32 @@
+//JS Dates
+document.getElementById("demo").innerHTML=new Date();
+document.getElementById("demo").innerHTML=new Date(1213);
+document.getElementById("demo").innerHTML=new Date(1991,09,16).toUTCString();
+
+//to more readable form
+document.getElementById("demo").innerHTML=new Date(1991,09,16).toDateString();
+
+//JS Date Formats
+document.getElementById("demo").innerHTML=new Date("1991-09-16");
+document.getElementById("demo").innerHTML=new Date("1991-09"); //year and month
+document.getElementById("demo").innerHTML=new Date("09/16/1991");
+
+//JS Get methods
+let d=new Date();
+document.getElementById("demo").innerHTML=d.getFullYear();//eturns year
+document.getElementById("demo").innerHTML=d.getMonth()+1;
+document.getElementById("demo").innerHTML=d.getDate();
+document.getElementById("demo").innerHTML=d.getDay();
+document.getElementById("demo").innerHTML=d.getFullYear();
+document.getElementById("demo").innerHTML=d.getMinutes();
+
+//JS set methods
+document.getElementById("demo").innerHTML=d.setUTCDate(16);
+document.getElementById("demo").innerHTML=d.getUTCDate();
+
+document.getElementById("demo").innerHTML=d.setFullYear(2020);
+document.getElementById("demo").innerHTML=d.getUTCFullYear();
+
+document.getElementById("demo").innerHTML=d.setUTCDate(27);
+document.getElementById("demo").innerHTML=d.getUTCDate();
+
