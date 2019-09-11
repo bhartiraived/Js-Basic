@@ -1,0 +1,28 @@
+//JS Bitwise
+var a=10;
+var b=20;
+
+if(a>b){
+  document.getElementById('demo').innerHTML="a is greater";
+}
+else {
+  document.getElementById('demo').innerHTML="b is greater";
+}
+
+
+var a=00010;
+var b=00100;
+
+document.getElementById('demo').innerHTML=a;//8
+document.getElementById('demo').innerHTML=b;//64
+document.getElementById('demo').innerHTML=a&b;//0
+
+//parse 
+function roughScale(x, base) {
+  var parsed = parseInt(x, base);
+  if (isNaN(parsed)) { return 0 }
+  return parsed * 100;
+}
+
+
+document.getElementById('demo').innerHTML=roughScale(' 0xF',16);
