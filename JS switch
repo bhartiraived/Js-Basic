@@ -1,0 +1,45 @@
+//JS switch
+
+var a = new Date();
+var cond=a.getDay();
+
+switch(cond){
+  case 0:
+  case 7:
+    document.getElementById('demo').innerHTML="Today is Weekend";
+    break;
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+  case 6:
+      document.getElementById('demo').innerHTML="Today is Weekday";
+      break;
+  default:
+      document.getElementById('demo').innerHTML="Invalid Value";
+
+}
+
+//Switch cases use strict comparison (===).
+//The values must be of the same type and value to match
+
+var cond="2";
+
+switch(cond){
+  case 0:
+  case 7:
+    document.getElementById('demo').innerHTML="Today is Weekend";
+    break;
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+  case 6:
+      document.getElementById('demo').innerHTML="Today is Weekday";
+      break;
+  default:
+      document.getElementById('demo').innerHTML="Invalid Value";
+
+}
