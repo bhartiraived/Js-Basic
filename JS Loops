@@ -1,0 +1,17 @@
+//JS loops
+//for in loop
+var text="";
+var flowers=["rose","orchid","lily","frangipani"];
+for(i in flowers){
+  text+=flowers[i] +"<br>";
+}
+document.getElementById('demo').innerHTML=text;
+
+//for of loop
+//(Let you loop over data structures that are iterable such as
+// on array, String, Map, NodeList etc)
+text="";
+for (x of flowers){
+  text+= x+"<br>";
+}
+document.getElementById('demo').innerHTML=text;a
