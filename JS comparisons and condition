@@ -1,0 +1,29 @@
+var a=10;
+var b=30;
+
+var ans=(a==10||b==0);
+console.log(ans);
+
+var ans=(a==0||b==30);
+console.log(ans);
+
+//When comparing a string with a number, 
+//JavaScript will convert the string to a number when
+// doing the comparison. An empty string converts to 0.
+// A non-numeric string converts to NaN which is always false.
+
+
+console.log(10>"12"); 
+console.log(10>"John"); 
+console.log("2">"12"); //when comaring two strings, 2 is greater than 12 
+
+//JS condition
+
+var age=2;
+if(age>(Number(age))){
+  console.log("Adult");
+
+}
+else{
+  console.log("Not an adult");
+}
